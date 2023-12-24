@@ -2,7 +2,7 @@
 import Container from "../common/Container";
 
 // images
-import logo from "../../assets/images/logo.svg";
+import logo from "/assets/images/logo.svg";
 
 // constants
 import { footerLinks } from "../../constants/footer";
