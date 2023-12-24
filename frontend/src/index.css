@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font import */
+@font-face {
+  font-family: Overpass;
+  src: url("./assets/fonts/Overpass-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+:root {
+  /* screen sizes */
+  --desktop: 1440px;
+  --mobile: 375px;
+
+  /* COLORS */
+  /* primary */
+  --bright-red: hsl(356, 100%, 66%);
+  --very-bright-red: hsl(355, 100%, 74%);
+  --very-dark-blue: hsl(208, 49%, 24%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+
+  /* gradient */
+  --bg-gradient-very-light-red: hsl(13, 100%, 72%);
+  --bg-gradient-light-red: hsl(353, 100%, 62%);
+
+  --bg-gradient-very-dark-gray-blue: hsl(237, 17%, 21%);
+  --bg-gradient-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+  /* TYPOGRAPHY */
+  --body-copy: 16px;
+  --fw-300: 300;
+  --fw-600: 600;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --overpass: Overpass, sans-serif;
+  --ubuntu: Ubuntu, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ubuntu);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--overpass);
+}
+
+/* header styles */
+
+header {
+  background-size: 225%;
+  background-position: left 25% center;
+  background-image: url("./assets/images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+
+/* media query for the background image on the header */
+@media screen and (min-width: 600px) {
+  header {
+    /* background-image: url("./assets/images/bg-pattern-intro-mobile.svg"); */
+  }
+
+  .description-2 {
+    background-position: left -15rem top -29rem, left;
+  }
+}
+
+/* description two */
+.description-2 {
+  background-image: url("./assets/images/bg-pattern-circles.svg"),
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  background-size: 50rem, 100%;
+  background-position: left -7rem top -27rem, left;
+}
