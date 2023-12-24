@@ -59,13 +59,9 @@ The scale property in css. This is a handly tool to scale up and element without
 </div>;
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Futture producst are going to have animation intergrations for single page websites to improve the user experience.
+Future products are going to have animation intergrations for single page websites to improve the user experience.
 
 ## Author
 
